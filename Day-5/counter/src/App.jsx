@@ -1,8 +1,8 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
 function App() {
 
- let [counter, setCounter] = useState(15)
+  let [counter, setCounter] = useState(15)
 
   // let counter = 25;
 
@@ -12,7 +12,11 @@ function App() {
   }
   const removeValue = () => {
     console.log("clicked", Math.random(), counter)
-    setCounter(counter - 1)
+    if (counter > 0) {
+      setCounter(counter - 1)
+    } else {
+      setCounter(counter)
+    }
   }
   return (
     <>
