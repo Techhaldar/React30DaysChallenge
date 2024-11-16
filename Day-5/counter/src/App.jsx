@@ -1,32 +1,37 @@
 import { useState } from 'react';
+import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
-
-  // let counter = 25;
+  let [counter, setcounter] = useState(15)
 
   const addValue = () => {
-    console.log("clicked", Math.random(), counter)
-    setCounter(counter + 1)
+    if (counter < 24) {
+      setcounter(++counter)
+    } else {
+      setcounter(counter)
+    }
+
+
   }
   const removeValue = () => {
-    console.log("clicked", Math.random(), counter)
     if (counter > 0) {
-      setCounter(counter - 1)
+      setcounter(--counter)
     } else {
-      setCounter(counter)
+      setcounter(counter)
     }
+    console.log("Button Clicked", counter)
   }
+
   return (
     <>
-      <h1>Chai aur react</h1>
-      <h2>Counter value: {counter}</h2>
-      <button onClick={addValue}>Add value {counter}</button><br /><br />
-      <button onClick={removeValue}>Remove value {counter}</button>
+      <h1>React with Hitesh Chaudhary</h1>
+      <h1>Counter Value : {counter}</h1>
+
+      <button onClick={addValue}>Add Value: {counter}</button>
+      <button onClick={removeValue}>Remove Value: {counter}</button>
     </>
   )
-
 }
 
-export default App;
+export default App
