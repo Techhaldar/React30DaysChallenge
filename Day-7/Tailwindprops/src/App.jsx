@@ -1,22 +1,19 @@
+import { useState } from 'react'
 import './App.css'
-import Card from './components/Card';
+import Card from './component/card'
+
 function App() {
 
-  let myObj = {
-    username: "Ratin",
-    age: 22
-  }
-  let newArr = [1, 2, 3, 4, 5]
 
   return (
     <>
-      <h1 className="bg-green-600 p-4 text-black rounded-xl font" >Tailwind and Props</h1><br />
-      <Card username="techhaldar" about="YouTuber" url = "https://yt3.googleusercontent.com/ZN_q_Bt-rbQukezohW-37HzUmP68KYEwUBSzzkQmXyFsNLeRT0zuOBEWqBIUnp_P2r-ptjZ83Q=s900-c-k-c0x00ffffff-no-rj"></Card><br />
-      <Card username="Ratin Haldar" about="Full Stack Web Developer" url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBE8uCMSRqM0NshoUpcjrhIbiupB9xQ613A&s"></Card>
+      <h1 className='bg-green-400 text-black p-4 border rounded-2xl mb-5' >Tailwind Test</h1>
 
+      <Card profile="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gCy523X9MfRemJP7jzukQrTLdDbthzyl2A&s" firstName="Ratin Haldar" position="Software Engineer" about="A software engineer builds and maintains software to solve problems." />
+
+      <Card profile="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" firstName="Raj Singh" position="Indian Army" about="The Indian Army defends India's borders and ensures national security."  />
     </>
   )
 }
 
 export default App
-import { } from 'react';
