@@ -1,11 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
+import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
-import Contact from './components/Contact/Contact.jsx'
-import Github from './components/Github/Github.jsx'
+import Contact from './components/Contact Us/Contact.jsx'
+import User from './components/User/User.jsx'
+import GitHub from './components/Github/Github.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -14,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <home />
+        element: <Home />
       },
       {
         path: "about",
@@ -26,16 +30,17 @@ const router = createBrowserRouter([
       },
       {
         path: "user/:userid",
-        element: <user />
+        element: <User />
       },
       {
         path: "github",
-        element: <Github />
-      },
-
+        element: <GitHub />
+      }
     ]
   }
 ])
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
