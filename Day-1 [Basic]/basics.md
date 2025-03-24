@@ -38,4 +38,4 @@ Used in older code; understand them to work with legacy projects.
 🖥️ BAAS Apps: 
 Leverage backend services to build advanced applications like: 
  🕸️ Social Media Clones 
- 🛒 E-commerce Apps 
+ 🛒 E-commerce Apps
