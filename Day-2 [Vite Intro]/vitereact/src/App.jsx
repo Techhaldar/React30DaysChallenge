@@ -1,8 +1,7 @@
 function App() {
 
-
   return (
-    <h1>This is React Revision Class</h1>
+    <h1>first interface of react with vite</h1>
   )
 }
 
