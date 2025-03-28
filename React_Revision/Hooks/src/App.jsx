@@ -5,10 +5,14 @@ function App() {
 
 
   function AddValue() {
-    setCounter(Counter + 1)
+    if (Counter < 20) {
+      setCounter(Counter + 1)
+    } else (Counter)
   }
   function RemoveValue() {
-    setCounter(Counter - 1)
+    if (Counter > 0) {
+      setCounter(Counter - 1)
+    } else (Counter)
   }
 
   return (
