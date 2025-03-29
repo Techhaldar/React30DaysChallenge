@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import './App.css'
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
       setcounter(counter + 1)
     } else {
       setcounter(counter)
-
     }
   }
 
@@ -22,7 +20,6 @@ function App() {
       setcounter(counter)
     }
   }
-
 
   return (
     <>
