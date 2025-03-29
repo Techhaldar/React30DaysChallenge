@@ -1,0 +1,56 @@
+button {
+  margin: 8px;
+  border-radius: 24px;
+}
+
+.button-1 {
+  background-color: red;
+}
+
+.button-2 {
+  background-color: Green;
+}
+
+.button-3 {
+  background-color: blue;
+}
+
+.button-4 {
+  background-color: gray;
+}
+
+.button-5 {
+  background-color: yellow;
+  color: black;
+}
+
+.button-6 {
+  background-color: Pink;
+}
+
+.button-7 {
+  background-color: purple;
+}
+
+.button-8 {
+  background-color: lavender;
+  color: black;
+}
+
+.button-9 {
+  background-color: White;
+  color: black;
+}
+
+.button-10 {
+  background-color: black;
+}
+
+.Container {
+  background-color: white;
+  padding: 12px;
+  border-radius: 24px;
+  position: absolute;
+  left: 280px;
+  bottom: 100px
+}
